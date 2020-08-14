@@ -1,0 +1,36 @@
+/*Color de Fondo*/
+/*selector de etiqueta: ya que es la etiqueta body cambiara su apariencia*/
+#cabeceraweb{
+    /*propiedad:valor*/
+    background-color: burlywood;
+    }
+
+#navegacionprincipal{
+    background-color: cornflowerblue;
+}
+
+#barralateral{
+    background-color: darkgoldenrod;
+    float:left; /*esta flotando y sale del flujo, por lo tanto es como si no estuviera */ 
+    height: 1291px;
+}
+
+#contenidoprincipal{
+    background-color: darkseagreen;
+    margin-left: 210px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+#pieprincipal{
+    background-color: grey;
+    /*para hacerlo en ambos lados derecha y izquierda*/
+    clear: both;
+}
+
+li{
+    background-color: indianred;
+    /*No usara el 10x10 del ancho de la pantalla
+    se pondran uno a continuacion de otro*/
+    display:inline;
+}

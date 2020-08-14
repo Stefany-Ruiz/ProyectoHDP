@@ -1,0 +1,85 @@
+h1{  
+    /*Centra el texto */
+ text-align: center;
+ /*Configuro el tamaño de letra con la letra que puse por defecto*/
+ font: bold 40px 'MiFuente';
+ /*Degradado en una caja de texto*/
+ background: -webkit-linear-gradient(top, gray, cadetblue);
+
+ width: 35%;
+ /*Redondear las esquinas de la caja*/
+ border-radius: 10px;
+ /*margen y auto para que se adapte ala resolucion de la pantalla*/
+ margin: 15px auto;
+ /*de la letra al borde de la caja*/
+ padding:15px;
+ /*color de letra*/
+ color:white;
+ /*Para poner una sombra en la caja*/
+ box-shadow: gray 5px 5px 10px;
+ /*Pone sombra a la letra*/
+ text-shadow: black 10px 2px 3px;
+}
+@font-face{
+    font-family: 'MiFuente';
+    src: url('aAlleyGarden.ttf');
+}
+
+body{
+    font-size: 62.5%;
+    font: bold 15px Century;
+    background-color: mediumaquamarine;
+}
+
+section{
+    /*del ancho de la pantalla*/
+    width:91%;
+    /*Borde superior dashed:significa que es para guiones*/
+    border-top: 1px dashed black;
+    margin: 15px auto;
+
+}
+
+figure{
+    /*Todo lo que aparezca a continuacion suba*/
+    float:left;
+}
+
+figure img{
+    padding: 4px;
+    background: gray;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    /*0.1 lo que tarda el texto en arrancar o imagen
+    0.3 hace la referiencia cuanto dura el efecto
+    ease-in-out: es el efecto */
+    -webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s;
+    box-shadow: gray 5px 5px 10px;
+}
+
+/*pseudo clase
+establecer una serie de propiedades para el estado hover
+del objeto img para los que esten dentro de figure*/
+
+figure img:hover{
+    /*para modificar la escala del objeto*/
+    -webkit-transform: scale(1.2); /*Cuando pase el raton por encima la imagen la haces un poquito mas grande*/
+}
+
+figcaption{
+    text-align: center;
+    font-size:5.3en;
+    margin-top: 5px;
+}
+
+/*Le di a la imagen una configuracion de que flote
+float por lo tanto el pie rodea a esas imagenes */
+
+footer{
+    clear: both;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.6en;
+    margin:10px 0px;
+}
